@@ -1,0 +1,114 @@
+
+
+body{font-family: latha;
+    color: white;
+    background: linear-gradient(
+        rgba(0,0,0,0.98),rgba(0,0,0,0.70),rgba(0,0,0,0.35),rgba(0,0,0,0)
+        )
+        ,url(background-image.jpg) no-repeat;
+        background-size: cover;
+}
+
+.logo img{
+    object-fit: contain;
+    mix-blend-mode: difference;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px -5px;
+    border: none;
+}
+
+.box ul li{
+    text-align: center;
+    width: 120px;
+    float:right;
+    margin: 10px auto;
+}
+
+.box ul li a{
+    text-decoration: none;
+    color: darkgray;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
+.box ul li a:hover{ color: white;}
+
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login{
+    background: rgb(162, 26, 26);
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.login:hover{ color: darkgray;}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .content-left .info h1{
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.content .content-left .info p{
+    font-size: 18px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.content .content-left button{
+    font-size: 20px;
+    font-weight: 1000;
+    padding: 10px 23px;
+    background-color: rgb(162, 26, 26);
+    color: black solid;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.content .content-left button:hover{ color: darkgray;}
+
+.image-container{
+    display: grid;
+    place-items: center;
+    grid-area: 1/1/2/2;
+}
+
+.image-container img{
+    width: min(25rem, 90%);
+    border-radius: 100%;
+}
